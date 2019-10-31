@@ -3,4 +3,7 @@ project(TCW)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TCW main.cpp TPC.cpp TPC.h)
+add_executable(TCW main.cpp TPC.cpp TPC.h
+        MoreStringFunctions.cpp MoreStringFunctions.h
+        CharFunctions.cpp CharFunctions.h
+        )

@@ -11,11 +11,18 @@
 #include <algorithm>
 #include <string>
 #include <map>
-void lowerInPlace(std::string& string);
+#include "MoreStringFunctions.h"
+
+std::string cleanWords(std::string);
+std::map<std::string, int>  countWords(std::string);
+std::map<int, std::string>  nonEssential(std::string);
+std::map<int, std::vector<std::string>, std::greater<>> sort(std::map<std::string, int>);
+void printOut(std::map<int, std::vector<std::string>, std::greater<>>,int);
+
+
+
 std::string lower(std::string string);
 bool contains(const std::string& string, char letter);
-void rstripInPlace(std::string& string, const std::string charsToRemove);
-void lstripInPlace(std::string& string, const std::string& charsToRemove);
 template <typename T>
 void removeMatchingElements(std::vector<T> &vec, const std::vector<T> &valsToRemove);
 
